@@ -101,9 +101,8 @@ a, li{
 
 .site-header{
   height: 800px;
-  padding: 48px 165px 352px;
+  padding: 48px 165px;
   background-color: var(--white-color);
-
 }
 
 
@@ -147,11 +146,23 @@ a, li{
 .hero {
   display: flex;
   align-items: center;
-  position: relative;
 }
 .hero-content {
-  margin-top: 140px;
+  position: relative;
   width: 565px;
+}
+
+.hero-content::before{
+  display: block;
+  background-image:url(../img/working_with_computer.svg);
+  background-repeat: no-repeat;
+  background-size:733px 482px;
+  background-position:center center;
+  position: absolute;
+  right: -900px;
+  width:733px;
+  height:482px;
+  content: "";
 }
 .hero-heading {
   margin: 0;
@@ -187,7 +198,7 @@ a, li{
   align-items: center;
   position: absolute;
   padding: 52px 60px ;
-  bottom: -250px;
+  bottom: -450px;
   left: 0;
   width: 1110px;
   height: 168px;
