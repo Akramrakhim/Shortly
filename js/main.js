@@ -12,8 +12,16 @@ if(elUrlShortenerForm)  {
 if(elUrlShortener){
     elUrlShortener.addEventListener('click', function (evt) {
         if(evt.target.matches('.js-copy-short-link-button')){
+            // Change button  text 
             evt.target.textContent = 'Copied!';
-            evt.target.classList.add('url-shortener__copy-button--copied');
+
+            // Change Button bgcolor 
+            evt.target.classList.add('url-shortener__copy-button--copied'); 
+
+            // Copy short link to clipboard
+            navigator.clipboard.writeText(evt.target.previousElementSibling.textContent);  
+
+            // Reset button text  and  class  after 1 second
             setTimeout(function (){
                 evt.target.textContent = 'Copy';
                 evt.target.classList.remove('url-shortener__copy-button--copied');
