@@ -85,9 +85,11 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
+  border-color: transparent;
+  -webkit-text-fill-color: inherit;
   -webkit-box-shadow: 0 0 0px 1000px #fff inset;
-  transition: background-color 5000s ease-in-out 0s;
 }
+
 
 /* PLACEHOLDER */
 ::-webkit-input-placeholder,
@@ -234,7 +236,7 @@ a, li{
   padding-bottom: 222px;
   background-image: url(../img/working_with_computer.svg);
   background-repeat: no-repeat;
-  background-position: left calc(50% + 476px) top 27px;
+  background-position: left calc(50% + 530px) top 27px;
 }
 .hero-content {
   max-width: 565px;
@@ -351,6 +353,9 @@ a, li{
 }
 .url-shortener__copy-button {
   min-width: 103px;
+}
+.url-shortener__copy-button--copied {
+  background-color: var(--dark-blue);
 }
 
 
