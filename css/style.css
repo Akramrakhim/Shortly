@@ -236,7 +236,7 @@ a, li{
   padding-bottom: 222px;
   background-image: url(../img/working_with_computer.svg);
   background-repeat: no-repeat;
-  background-position: left calc(50% + 530px) top 27px;
+  background-position: left calc(50% + 477px) top 27px;
 }
 .hero-content {
   max-width: 565px;
@@ -263,11 +263,11 @@ a, li{
 .index-url-shortener-featurs-wrapper {
   display: flex;
   flex-direction: column;
-  background-color: var(--light-bg);
+  background-color: var(--light-bg) ;
 }
 .index-url-shortener-featurs-wrapper__url-shortner {
   margin-top: -84px;
-  margin-bottom: 120px;
+  margin-bottom: 96px;
 }
 
 .url-shortener__form {
@@ -363,7 +363,7 @@ a, li{
 /* STATISTICS */
 
 .index-statistics {
-  margin-bottom: 120px;
+  margin-bottom: 120px;   
 }
 
 .index-statistics__top {
@@ -381,6 +381,7 @@ a, li{
   line-height: 48px;
   color:var(--heading-color);
   letter-spacing: -1px;
+  text-transform: capitalize;
 }
 .statistics-action-text {
   margin: 0;
